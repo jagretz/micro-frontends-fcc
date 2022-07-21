@@ -1,6 +1,7 @@
 {
   "name": "pdp",
   "version": "1.0.0",
+  "description": "A product detail page (PDP) is a web page on an eCommerce site that presents the description of a specific product in view.",
   "scripts": {
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",

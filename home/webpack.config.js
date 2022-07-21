@@ -6,16 +6,13 @@ module.exports = {
   output: {
     publicPath: "http://localhost:3000/",
   },
-
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
   },
-
   devServer: {
     port: 3000,
     historyApiFallback: true,
   },
-
   module: {
     rules: [
       {
@@ -38,7 +35,6 @@ module.exports = {
       },
     ],
   },
-
   plugins: [
     new ModuleFederationPlugin({
       name: "home",

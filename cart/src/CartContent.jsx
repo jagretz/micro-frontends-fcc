@@ -24,13 +24,19 @@ export default function CartContent() {
             </div>
           </React.Fragment>
         ))}
+
+        {/* Empty spaces acting as grid-itms in the grid to (cough) row-reverse 
+        the last row in the grid. i.e. display last item in the grid in the 
+        bottom-left cell. */}
         <div></div>
         <div></div>
         <div></div>
+
         <div className="text-right" id="grand_total">
           {currency.format(items.reduce((a, v) => a + v.quantity * v.price, 0))}
         </div>
       </div>
+
       {items.length > 0 && (
         <div className="flex mb-10">
           <div className="flex-grow">

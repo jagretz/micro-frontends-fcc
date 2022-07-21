@@ -48,15 +48,21 @@ export default function MiniCart() {
                   </div>
                 </React.Fragment>
               ))}
+
+              {/* Empty spaces acting as grid-itms in the grid to (cough) row-reverse 
+              the last row in the grid. i.e. display last item in the grid in the 
+              bottom-left cell. */}
               <div></div>
               <div></div>
               <div></div>
+
               <div>
                 {currency.format(
                   items.reduce((a, v) => a + v.quantity * v.price, 0)
                 )}
               </div>
             </div>
+
             <div className="flex">
               <div className="flex-grow">
                 <button

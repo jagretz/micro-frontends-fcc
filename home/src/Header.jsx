@@ -15,6 +15,7 @@ export default function Header() {
             Cart
           </Link>
         </div>
+
         <div className="flex-end relative">
           <MiniCart />
           <Login />
